@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #EBE4D7;
+}
+
+
+a:focus,
+button:focus,
+button:focus-visible {
+  outline: 2px solid black;
+}
+
+/* =========== Fonts =========== */
+@font-face {
+  font-family: 'GA Dzen';
+  src: url('/fonts/web/GAdzenRegular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Contractica Regular';
+  src: url('/fonts/web/TBCContractica-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Contractica Bold';
+  src: url('/fonts/web/TBCContractica-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* =========== Fonts =========== */
+
+/* =========== Resets =========== */
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+ul > li {
+  padding-left: 2rem;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: inherit;
+  background-color: rgba(255, 255, 255, 0.69);
+  transition: .5s ease-in-out;
+}
+button:hover {
+  transform: scale(1.03);
+}
+/* =========== Resets =========== */
+
+html {
+  background-color: var(--bg);
+  font-family: 'Contractica Regular', 'GA Dzen', 'Contractica Bold', system-ui;
+  font-size: 1vw;
+}
+
+
+/* =========== Responsive =========== */
+@media screen and (width < 560px) {
+  html {
+    font-size: 2vh;
+  }
+}
+/* =========== Responsive =========== */
